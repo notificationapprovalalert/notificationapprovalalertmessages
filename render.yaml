@@ -1,9 +1,9 @@
-[build]	
-    command = "yarn build"
-    build = "build"
-
-[build.environment]	
-    NODE_ENV = "development"	
-
-[context.production.environment]	
-    NODE_ENV = "production"
+services:
+- type: pserv
+  name: redis
+  env: docker
+  autoDeploy: false
+  disk:
+    name: data
+    mountPath: /var/lib/redis
+    sizeGB: 10
