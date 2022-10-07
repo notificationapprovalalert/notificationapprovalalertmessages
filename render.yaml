@@ -6,7 +6,6 @@
 
 services:
 - name: notificationapprovalalertmessages
--web
   type: web
   env: static
   buildCommand: yarn rw deploy render web
