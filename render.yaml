@@ -16,7 +16,6 @@ services:
   routes:
   - type: rewrite
     source: /.notificationapprovalalertmessages
-/functions/*
 #####
 # NOTE: replace destination api url after first deploy to Render
 # example:
